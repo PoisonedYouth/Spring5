@@ -5,18 +5,18 @@
     <title>Spring Framework Guru</title>
 </head>
 <body>
-<h1>Authors List</h1>
+<h1>Author List</h1>
 
 <table>
     <tr>
         <th>ID</th>
-        <th>Firstname</th>
-        <th>Lastname</th>
+        <th>First Name</th>
+        <th>Last</th>
     </tr>
     <tr th:each="author : ${authors}">
         <td th:text="${author.id}">123</td>
-        <td th:text="${author.firstName}">Tom</td>
-        <td th:text="${author.lastName}">Tucker</td>
+        <td th:text="${author.firstName}">Joe</td>
+        <td th:text="${author.lastName}">Buck</td>
     </tr>
 </table>
 

@@ -1,4 +1,4 @@
-package com.poisonedyouth.spring5.model;
+package guru.springframework.spring5webapp.model;
 
 import javax.persistence.*;
 import java.util.HashSet;
