@@ -1,6 +1,6 @@
-package guru.springframework.spring5webapp.repositories;
+package com.poisonedyouth.spring5webapp.repositories;
 
-import guru.springframework.spring5webapp.model.Book;
+import com.poisonedyouth.spring5webapp.model.Book;
 import org.springframework.data.repository.CrudRepository;
 
 /**

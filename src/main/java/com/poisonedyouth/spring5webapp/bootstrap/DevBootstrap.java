@@ -1,11 +1,11 @@
-package guru.springframework.spring5webapp.bootstrap;
+package com.poisonedyouth.spring5webapp.bootstrap;
 
-import guru.springframework.spring5webapp.model.Author;
-import guru.springframework.spring5webapp.model.Book;
-import guru.springframework.spring5webapp.model.Publisher;
-import guru.springframework.spring5webapp.repositories.AuthorRepository;
-import guru.springframework.spring5webapp.repositories.BookRepository;
-import guru.springframework.spring5webapp.repositories.PublisherRepository;
+import com.poisonedyouth.spring5webapp.model.Author;
+import com.poisonedyouth.spring5webapp.model.Book;
+import com.poisonedyouth.spring5webapp.model.Publisher;
+import com.poisonedyouth.spring5webapp.repositories.AuthorRepository;
+import com.poisonedyouth.spring5webapp.repositories.BookRepository;
+import com.poisonedyouth.spring5webapp.repositories.PublisherRepository;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
