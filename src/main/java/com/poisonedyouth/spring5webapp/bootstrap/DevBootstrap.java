@@ -6,25 +6,23 @@ import com.poisonedyouth.spring5webapp.model.Publisher;
 import com.poisonedyouth.spring5webapp.repositories.AuthorRepository;
 import com.poisonedyouth.spring5webapp.repositories.BookRepository;
 import com.poisonedyouth.spring5webapp.repositories.PublisherRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by jt on 5/16/17.
+ * Created by poisonedyouth on 5/16/17.
  */
 @Component
 public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> {
 
+    @Autowired
     private AuthorRepository authorRepository;
+    @Autowired
     private BookRepository bookRepository;
+    @Autowired
     private PublisherRepository publisherRepository;
-
-    public DevBootstrap(AuthorRepository authorRepository, BookRepository bookRepository, PublisherRepository publisherRepository) {
-        this.authorRepository = authorRepository;
-        this.bookRepository = bookRepository;
-        this.publisherRepository = publisherRepository;
-    }
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
